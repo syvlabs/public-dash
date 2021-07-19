@@ -1,4 +1,4 @@
 module.exports = {
   reactStrictMode: true,
-  basePath: '/public-dash/docs',
+  basePath: '/public-dash',
 }
