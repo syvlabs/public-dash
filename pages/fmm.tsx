@@ -34,7 +34,7 @@ const FMM: FC = () => {
           <div 
             className="my-4 w-80 rounded-lg text-white bg-green-500 hover:bg-green-600 active:bg-green-800 p-4 mx-8 font-bold select-none cursor-pointer shadow" 
             onClick={() => {navigator.clipboard.writeText("Pls deliver food before 12nn, pls leave food at lobby")}}>
-              1. Click to Copy Delivery Message
+              1. Copy Delivery Message
           </div>
           <a href={LINKS[index].url} target="_blank" rel="noreferrer">
             <div className="my-4 w-80 rounded-lg text-white bg-blue-400 hover:bg-blue-500 active:bg-blue-700 p-4 mx-8 font-bold select-none cursor-pointer shadow">
