@@ -41,6 +41,7 @@ const FMM: FC = () => {
                 2. Click to Open {LINKS[index].name} Cuisines (for {orderDate.format("MMM D")})
             </div>
           </a>
+          <a href={LINKS[index].url}>{LINKS[index].url}</a>
       </div>
     </div>
   )
