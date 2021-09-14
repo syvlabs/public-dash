@@ -41,7 +41,6 @@ const FMM: FC = () => {
                 2. Click to Open {LINKS[index].name} Cuisines (for {orderDate.format("MMM D")})
             </div>
           </a>
-          <a className="cursor-pointer" onClick={() => window.open(LINKS[index].url, "_blank")} rel="noreferrer">{LINKS[index].url}</a>
       </div>
     </div>
   )
