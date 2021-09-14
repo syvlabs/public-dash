@@ -23,7 +23,7 @@ const LINKS: {[key: number]: any} = {
 
 const FMM: FC = () => {
   const orderDate: Moment = moment().add(2, 'days')
-  const index: number = useMemo(() => ((orderDate.isoWeek() + 1) % 4) + 1, [])
+  const index: number = ((orderDate.isoWeek() + 1) % 4) + 1
   return (
     <div>
       <Head>
@@ -36,12 +36,12 @@ const FMM: FC = () => {
             onClick={() => {navigator.clipboard.writeText("Pls deliver food before 12nn, pls leave food at lobby")}}>
               1. Click to Copy Delivery Message
           </div>
-          <a href={LINKS[index].url} target="_blank" rel="noreferrer">
+          <a className="cursor-pointer" onClick={() => window.open(LINKS[index].url, "_blank")} rel="noreferrer">
             <div className="my-4 w-96 rounded-lg text-white bg-blue-400 hover:bg-blue-500 active:bg-blue-700 p-4 mx-8 font-bold select-none cursor-pointer shadow">
                 2. Click to Open {LINKS[index].name} Cuisines (for {orderDate.format("MMM D")})
             </div>
           </a>
-          <a href={LINKS[index].url}>{LINKS[index].url}</a>
+          <a className="cursor-pointer" onClick={() => window.open(LINKS[index].url, "_blank")} rel="noreferrer">{LINKS[index].url}</a>
       </div>
     </div>
   )
