@@ -27,7 +27,7 @@ const FMM: FC = () => {
   return (
     <div>
       <Head>
-        <title>Food Market Shortcuts</title>
+        <title>Food Market Shortcuts!</title>
       </Head>
       <div className="w-full">
           <div className="text-2xl px-8 mt-8 text-gray-700 font-bold">Food Market Shortcuts</div>
