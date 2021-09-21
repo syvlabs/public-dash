@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, useMemo } from 'react';
 import Head from 'next/head'
 import moment, { Moment } from 'moment'
 
@@ -23,7 +23,7 @@ const LINKS: {[key: number]: any} = {
 
 const FMM: FC = () => {
   const orderDate: Moment = moment().add(2, 'days')
-  const index: number = ((orderDate.isoWeek() + 1) % 4) + 1;
+  const index: number = useMemo(() => ((orderDate.isoWeek() + 1) % 4) + 1, [])
   return (
     <div>
       <Head>
